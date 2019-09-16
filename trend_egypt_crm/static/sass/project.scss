@@ -1,14 +1,11 @@
-
 @import "custom_bootstrap_vars";
 @import "bootstrap";
-
-
 
 
 // project specific CSS goes here
 
 ////////////////////////////////
-		//Variables//
+//Variables//
 ////////////////////////////////
 
 // Alert colors
@@ -21,7 +18,7 @@ $dark-pink: #eed3d7;
 $red: #b94a48;
 
 ////////////////////////////////
-		//Alerts//
+//Alerts//
 ////////////////////////////////
 
 // bootstrap alert CSS, translated to the django-standard levels of
@@ -37,4 +34,74 @@ $red: #b94a48;
   background-color: $pink;
   border-color: $dark-pink;
   color: $red;
+}
+
+.nav-item {
+  background: rgb(205, 201, 255);
+  background: -moz-linear-gradient(0deg, rgba(205, 201, 255, 1) 0%, rgba(249, 248, 254, 1) 100%);
+  background: -webkit-linear-gradient(0deg, rgba(205, 201, 255, 1) 0%, rgba(249, 248, 254, 1) 100%);
+  background: linear-gradient(0deg, rgba(205, 201, 255, 1) 0%, rgba(249, 248, 254, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#cdc9ff", endColorstr="#f9f8fe", GradientType=1);
+  color: #a8a7bf;
+}
+
+//.navbar {
+//  padding: 0;
+//}
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+
+.material-icons.white { color: #858585; }
+
+//.divider{
+//  background-image: linear-gradient(to right, white 0%, rgb(211, 211, 200) 50%, white 100%);
+//    background-position-x: center;
+//    background-position-y: center;
+//    background-size: cover;
+//    background-repeat-x: no-repeat;
+//    background-repeat-y: no-repeat;
+//    background-attachment: initial;
+//    background-origin: initial;
+//    background-clip: initial;
+//    background-color: initial;
+//  width: 1px;
+//  margin-top: 5px;
+//  margin-bottom: 5px;
+//}
+
+.nav-item{
+  //height: 100%;
+}
+
+.nav-link{
+  height: 100%;
+  color: #777587;
+}
+
+.nav{
+  background: rgb(205, 201, 255);
+  background: -moz-linear-gradient(0deg, rgba(205, 201, 255, 1) 0%, rgba(249, 248, 254, 1) 100%);
+  background: -webkit-linear-gradient(0deg, rgba(205, 201, 255, 1) 0%, rgba(249, 248, 254, 1) 100%);
+  background: linear-gradient(0deg, rgba(205, 201, 255, 1) 0%, rgba(249, 248, 254, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#cdc9ff", endColorstr="#f9f8fe", GradientType=1);
+  color: #a8a7bf;
+}
+
+.navbar-container{
+    background-image: linear-gradient(to right, white 0%, rgb(211, 211, 200) 50%, white 100%);
+    background-position-x: center;
+    background-position-y: center;
+    background-size: cover;
+    background-repeat-x: no-repeat;
+    background-repeat-y: no-repeat;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: initial;
+}
+
+.nav-link >.float-right{
+  padding-left: 10px;
 }
