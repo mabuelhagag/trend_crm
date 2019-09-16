@@ -32,66 +32,74 @@
 
 <body>
 
-<div class="mb-1 navbar-container">
+<div>
 
-      <ul class="nav nav-tabs">
-        <div style="width: 200px; float: left; background-color: #0f6674">&nbsp;</div>
-        <li class="nav-item active">
-          <a class="nav-link" href="{% url 'home' %}">
-            <div class="float-left"><i class="material-icons md-48 white">account_circle</i></div>
-            <div class="float-right">Client <br>Manager <span class="sr-only">(current)</span></div>
-          </a>
-        </li>
+  <ul class="nav nav-tabs">
+    <div style="width: 200px; float: left; background-color: #0f6674">&nbsp;</div>
+    <li class="nav-item active">
+      <a class="nav-link" href="{% url 'home' %}">
+        <div class="float-left"><i class="material-icons md-48 white">account_circle</i></div>
+        <div class="float-right">Client <br>Manager <span class="sr-only">(current)</span></div>
+      </a>
+    </li>
 
-        <li class="nav-item">
-          <a class="nav-link" href="{% url 'home' %}">
-          <div class="float-left"><i class="material-icons md-48 white">computer</i></div>
-          <div class="float-right">Device <br> Manager</div>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="{% url 'home' %}">
-          <div class="float-left"><i class="material-icons md-48 white">shopping_cart</i></div>
-          <div class="float-right">Order <br> Manager</div>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="{% url 'home' %}">
-          <div class="float-left"><i class="material-icons md-48 white">monetization_on</i></div>
-          <div class="float-right">Sales <br> Manager</div>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="{% url 'home' %}">
-          <div class="float-left"><i class="material-icons md-48 white">pie_chart</i></div>
-          <div class="float-right">Reports <br> and Stats</div>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="{% url 'home' %}">
-          <div class="float-left"><i class="material-icons md-48 white">settings_applications</i></div>
-          <div class="float-right">Setup <br> and Admin</div>
-          </a>
-        </li>
+    <li class="nav-item">
+      <a class="nav-link" href="{% url 'home' %}">
+        <div class="float-left"><i class="material-icons md-48 white">computer</i></div>
+        <div class="float-right">Device <br> Manager</div>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="{% url 'home' %}">
+        <div class="float-left"><i class="material-icons md-48 white">shopping_cart</i></div>
+        <div class="float-right">Order <br> Manager</div>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="{% url 'home' %}">
+        <div class="float-left"><i class="material-icons md-48 white">monetization_on</i></div>
+        <div class="float-right">Sales <br> Manager</div>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="{% url 'home' %}">
+        <div class="float-left"><i class="material-icons md-48 white">pie_chart</i></div>
+        <div class="float-right">Reports <br> and Stats</div>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="{% url 'home' %}">
+        <div class="float-left"><i class="material-icons md-48 white">settings_applications</i></div>
+        <div class="float-right">Setup <br> and Admin</div>
+      </a>
+    </li>
 
-      </ul>
-    </div>
+  </ul>
+</div>
 
+</div>
+<div class="toolbar">
+  <div class="float-left"><b>You are here:</b>
+    <select name="" id="">
+      <option value="">Hivelocity</option>
+    </select>
+    <a href="">Client Manager</a></div>
+  <div class="float-right">
+    Search
+    <select name="" id="">
+      <option value="">Client Managaer</option>
+    </select>
+    for
+    <input type="text"/>
+  </div>
+</div>
+<div>
+  <h3>Client Manager</h3>
 </div>
 
 <div class="container">
-
-    {% if messages %}
-        {% for message in messages %}
-          <div class="alert {% if message.tags %}alert-{{ message.tags }}{% endif %}">{{ message }}
-            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span
-                    aria-hidden="true">&times;</span></button>
-          </div>
-        {% endfor %}
-    {% endif %}
-
     {% block content %}
-      <p>Use this document as a way to quick start any new project.a</p>
+
     {% endblock content %}
 
 </div> <!-- /container -->

@@ -8446,7 +8446,7 @@ a.text-dark:hover, a.text-dark:focus {
   border-color: #eed3d7;
   color: #b94a48; }
 
-.nav-item {
+.nav-item, .nav, .toolbar {
   background: #cdc9ff;
   background: -webkit-gradient(linear, left bottom, left top, from(#cdc9ff), to(#f9f8fe));
   background: linear-gradient(0deg, #cdc9ff 0%, #f9f8fe 100%);
@@ -8472,25 +8472,13 @@ a.text-dark:hover, a.text-dark:focus {
   height: 100%;
   color: #777587; }
 
-.nav {
-  background: #cdc9ff;
-  background: -webkit-gradient(linear, left bottom, left top, from(#cdc9ff), to(#f9f8fe));
-  background: linear-gradient(0deg, #cdc9ff 0%, #f9f8fe 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#cdc9ff", endColorstr="#f9f8fe", GradientType=1);
-  color: #a8a7bf; }
-
-.navbar-container {
-  background-image: -webkit-gradient(linear, left top, right top, from(white), color-stop(50%, #d3d3c8), to(white));
-  background-image: linear-gradient(to right, white 0%, #d3d3c8 50%, white 100%);
-  background-position-x: center;
-  background-position-y: center;
-  background-size: cover;
-  background-repeat-x: no-repeat;
-  background-repeat-y: no-repeat;
-  background-attachment: initial;
-  background-origin: initial;
-  background-clip: initial;
-  background-color: initial; }
-
 .nav-link > .float-right {
   padding-left: 10px; }
+
+.toolbar {
+  padding: 10px;
+  color: black;
+  height: 50px; }
+
+a {
+  text-decoration: underline; }
