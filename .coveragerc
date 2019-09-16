@@ -1,0 +1,5 @@
+[run]
+include = trend_egypt_crm/*
+omit = *migrations*, *tests*
+plugins =
+    django_coverage_plugin
