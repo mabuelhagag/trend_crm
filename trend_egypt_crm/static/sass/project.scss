@@ -57,7 +57,8 @@ $red: #b94a48;
 .material-icons.md-36 { font-size: 36px; }
 .material-icons.md-48 { font-size: 48px; }
 
-.material-icons.white { color: #858585; }
+.material-icons.grey { color: #858585; }
+.material-icons.wihite { color: white; }
 
 //.divider{
 //  background-image: linear-gradient(to right, white 0%, rgb(211, 211, 200) 50%, white 100%);
@@ -88,6 +89,7 @@ $red: #b94a48;
 
 .nav{
 @extend %toolbar-color;
+  border-bottom-style: groove;
 }
 
 
@@ -99,7 +101,17 @@ $red: #b94a48;
   padding: 10px;
   color: black;
   height: 50px;
+  border-bottom-style: groove;
 }
 a{
   text-decoration: underline;
+}
+
+.header{
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #5c5994;
+  color: white;
+  border-bottom-style: groove;
 }

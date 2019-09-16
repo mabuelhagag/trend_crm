@@ -8465,12 +8465,18 @@ a.text-dark:hover, a.text-dark:focus {
 .material-icons.md-48 {
   font-size: 48px; }
 
-.material-icons.white {
+.material-icons.grey {
   color: #858585; }
+
+.material-icons.wihite {
+  color: white; }
 
 .nav-link {
   height: 100%;
   color: #777587; }
+
+.nav {
+  border-bottom-style: groove; }
 
 .nav-link > .float-right {
   padding-left: 10px; }
@@ -8478,7 +8484,16 @@ a.text-dark:hover, a.text-dark:focus {
 .toolbar {
   padding: 10px;
   color: black;
-  height: 50px; }
+  height: 50px;
+  border-bottom-style: groove; }
 
 a {
   text-decoration: underline; }
+
+.header {
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #5c5994;
+  color: white;
+  border-bottom-style: groove; }
