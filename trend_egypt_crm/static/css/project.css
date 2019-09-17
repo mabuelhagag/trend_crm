@@ -8515,5 +8515,7 @@ a {
     color: #55508c;
     padding: 10px 10px 0px 10px; }
 
-.pagination-container a {
-  color: black; }
+.pagination-container {
+  margin-bottom: 10px; }
+  .pagination-container a {
+    color: black; }
