@@ -94,37 +94,58 @@
   </div>
 </div>
 <div class="header">
-  <div class="float-left"><i class="material-icons md-48 white">account_circle</i></div><h3 style="padding-top: 5px; padding-left: 70px;">Client Manager</h3>
+  <div class="float-left"><i class="material-icons md-48 white">account_circle</i></div>
+  <h3 style="padding-top: 5px; padding-left: 70px;">Client Manager</h3>
 </div>
 <div class="action-bar">
   <h6><a href="">Add a new Client</a></h6>
 </div>
-<div class="container">
-    {% block content %}
+<div class="filter">
+  <div class="row">
+    <div class="col">
+      <h5><b>Active Clients</b></h5>
+    </div>
 
-    {% endblock content %}
+    <div class="col">
+      <div style="float:left; padding-top: 5px;">Jump to client ID # <input type="text"></div>
+      <i class="material-icons white md-31" style="margin-top: 4px; margin-left: 2px; color: #55508c;">
+        play_circle_filled
+      </i>
+    </div>
 
-</div> <!-- /container -->
+    <div class="col" style="text-align: right; margin-right: 10px;padding-top: 5px;">
+      View: <select name="" id="">
+      <option value="">Active Clients</option>
+    </select>
+      Tag: <input type="text">
+    </div>
+  </div>
+  <div class="container">
+      {% block content %}
 
-{% block modal %}{% endblock modal %}
+      {% endblock content %}
 
-<!-- Le javascript
-================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
-{% block javascript %}
+  </div> <!-- /container -->
 
-  <!-- Vendor dependencies bundled as one file-->
+    {% block modal %}{% endblock modal %}
 
-  <script src="{% static 'js/vendors.js' %}"></script>
+  <!-- Le javascript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+    {% block javascript %}
 
+      <!-- Vendor dependencies bundled as one file-->
 
-
-  <!-- place project specific Javascript in this file -->
-
-  <script src="{% static 'js/project.js' %}"></script>
+      <script src="{% static 'js/vendors.js' %}"></script>
 
 
-{% endblock javascript %}
+
+      <!-- place project specific Javascript in this file -->
+
+      <script src="{% static 'js/project.js' %}"></script>
+
+
+    {% endblock javascript %}
 </body>
 </html>
 

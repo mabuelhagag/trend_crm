@@ -8465,14 +8465,17 @@ a.text-dark:hover, a.text-dark:focus {
 .material-icons.md-48 {
   font-size: 48px; }
 
+.material-icons.md-31 {
+  font-size: 31px; }
+
 .material-icons.grey {
   color: #858585; }
 
-.material-icons.wihite {
+.material-icons.white {
   color: white; }
 
 .nav-item {
-  margin-bottom: 0; }
+  margin-bottom: 0 !important; }
 
 .nav-link {
   height: 100%;
@@ -8503,3 +8506,10 @@ a {
   background-color: #ff8801;
   border-bottom-style: groove;
   padding: 10px 10px 0px 10px; }
+
+.filter {
+  background-color: #c7c3ff;
+  border-bottom-style: groove; }
+  .filter h5 {
+    color: #55508c;
+    padding: 10px 10px 0px 10px; }

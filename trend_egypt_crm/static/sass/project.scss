@@ -56,9 +56,10 @@ $red: #b94a48;
 .material-icons.md-24 { font-size: 24px; }
 .material-icons.md-36 { font-size: 36px; }
 .material-icons.md-48 { font-size: 48px; }
+.material-icons.md-31 { font-size: 31px; }
 
 .material-icons.grey { color: #858585; }
-.material-icons.wihite { color: white; }
+.material-icons.white { color: white; }
 
 //.divider{
 //  background-image: linear-gradient(to right, white 0%, rgb(211, 211, 200) 50%, white 100%);
@@ -78,7 +79,7 @@ $red: #b94a48;
 
 .nav-item{
   //height: 100%;
-  margin-bottom: 0;
+  margin-bottom: 0 !important;
 }
 
 .nav-link{
@@ -122,4 +123,13 @@ a{
   background-color: #ff8801;
   border-bottom-style: groove;
   padding: 10px 10px 0px 10px;
+}
+
+.filter{
+  background-color: #c7c3ff;
+  h5{
+    color: #55508c;
+    padding: 10px 10px 0px 10px;
+  }
+  border-bottom-style: groove;
 }
