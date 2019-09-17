@@ -8446,7 +8446,7 @@ a.text-dark:hover, a.text-dark:focus {
   border-color: #eed3d7;
   color: #b94a48; }
 
-.nav-item, .nav, .toolbar {
+.nav-item, .nav {
   background: #cdc9ff;
   background: -webkit-gradient(linear, left bottom, left top, from(#cdc9ff), to(#f9f8fe));
   background: linear-gradient(0deg, #cdc9ff 0%, #f9f8fe 100%);
@@ -8471,17 +8471,18 @@ a.text-dark:hover, a.text-dark:focus {
 .material-icons.wihite {
   color: white; }
 
+.nav-item {
+  margin-bottom: 0; }
+
 .nav-link {
   height: 100%;
   color: #777587; }
-
-.nav {
-  border-bottom-style: groove; }
 
 .nav-link > .float-right {
   padding-left: 10px; }
 
 .toolbar {
+  background-color: #c7c3ff;
   padding: 10px;
   color: black;
   height: 50px;
@@ -8497,3 +8498,8 @@ a {
   background-color: #5c5994;
   color: white;
   border-bottom-style: groove; }
+
+.action-bar {
+  background-color: #ff8801;
+  border-bottom-style: groove;
+  padding: 10px 10px 0px 10px; }

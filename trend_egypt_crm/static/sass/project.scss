@@ -78,6 +78,7 @@ $red: #b94a48;
 
 .nav-item{
   //height: 100%;
+  margin-bottom: 0;
 }
 
 .nav-link{
@@ -89,7 +90,7 @@ $red: #b94a48;
 
 .nav{
 @extend %toolbar-color;
-  border-bottom-style: groove;
+  //border-bottom-style: groove;
 }
 
 
@@ -97,10 +98,11 @@ $red: #b94a48;
   padding-left: 10px;
 }
 .toolbar{
-  @extend %toolbar-color;
+  background-color: #c7c3ff;
   padding: 10px;
   color: black;
   height: 50px;
+
   border-bottom-style: groove;
 }
 a{
@@ -114,4 +116,10 @@ a{
   background-color: #5c5994;
   color: white;
   border-bottom-style: groove;
+}
+
+.action-bar{
+  background-color: #ff8801;
+  border-bottom-style: groove;
+  padding: 10px 10px 0px 10px;
 }
