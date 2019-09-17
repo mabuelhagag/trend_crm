@@ -8509,7 +8509,11 @@ a {
 
 .filter {
   background-color: #c7c3ff;
-  border-bottom-style: groove; }
+  border-bottom-style: groove;
+  margin-bottom: 20px; }
   .filter h5 {
     color: #55508c;
     padding: 10px 10px 0px 10px; }
+
+.pagination-container a {
+  color: black; }

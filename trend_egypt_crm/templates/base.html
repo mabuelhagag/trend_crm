@@ -120,32 +120,46 @@
       Tag: <input type="text">
     </div>
   </div>
-  <div class="container">
-      {% block content %}
+</div>
+<div class="container-fluid">
+    {% block content %}
+      <div class="row pagination-container">
+        <div class="col text-left">Client <b>1-100</b> of 36400 shown</div>
+        <div class="col"></div>
+        <div class="col text-right">
+          <a href=""><< </a>
+          <a href="">< </a>
+          <a href="">1 </a>
+          <a href="">2 </a>
+          <a href="">3 </a>
+          <a href="">4 </a>
+          <a href=""> ></a>
+          <a href=""> >></a>
+        </div>
+      </div>
+    {% endblock content %}
 
-      {% endblock content %}
+</div> <!-- /container -->
 
-  </div> <!-- /container -->
+{% block modal %}{% endblock modal %}
 
-    {% block modal %}{% endblock modal %}
+<!-- Le javascript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+{% block javascript %}
 
-  <!-- Le javascript
-  ================================================== -->
-  <!-- Placed at the end of the document so the pages load faster -->
-    {% block javascript %}
+  <!-- Vendor dependencies bundled as one file-->
 
-      <!-- Vendor dependencies bundled as one file-->
-
-      <script src="{% static 'js/vendors.js' %}"></script>
+  <script src="{% static 'js/vendors.js' %}"></script>
 
 
 
-      <!-- place project specific Javascript in this file -->
+  <!-- place project specific Javascript in this file -->
 
-      <script src="{% static 'js/project.js' %}"></script>
+  <script src="{% static 'js/project.js' %}"></script>
 
 
-    {% endblock javascript %}
+{% endblock javascript %}
 </body>
 </html>
 
