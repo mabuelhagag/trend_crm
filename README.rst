@@ -32,6 +32,16 @@ Setting Up Your Users
 
 For convenience, you can keep your normal user logged in on Chrome and your superuser logged in on Firefox (or similar), so that you can see how the site behaves for both kinds of users.
 
+Create Dummy Data
+^^^^^^^^^^^^^^^^^
+
+* To create dummy data, run the following command to add a 1000 user records ::
+
+    $ docker-compose -f local.yml run --rm django python manage.py seed users --number 1000
+
+* You might receive `duplicate key value` error. Just ignore the error and repeat the command.
+
+
 Type checks
 ^^^^^^^^^^^
 
